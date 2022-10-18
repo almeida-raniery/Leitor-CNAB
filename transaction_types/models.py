@@ -14,4 +14,4 @@ class TransactionType(models.Model):
         max_length=1, choices=TransactionSign.choices, default=TransactionSign.PLUS)
 
     def __str__(self):
-        return f'{self.id} - {self.description}'
+        return f'{self.id} - {self.description} {self.sign}'
