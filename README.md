@@ -1,5 +1,13 @@
 # Leitor-CNAB
 
+## Inicializando banco de dados
+  Essa aplicação usa banco de dados sqlite3, para inicializá-lo:
+
+  1. Abra o terminal na pasta raiz do repositório;
+  2. Configure seu ambiente virtual da forma como preferir (opcional); 
+  3. Use o comando `python manage.py migrate` para gerar o banco de dados com as tabelas necessárias para a aplicação;
+  4. Você pode rodar a aplicação com o comando `python manage.py runserver` e pará-la com as teclas `CTRL + C` no windows e linux, ou `CMD + C` no mac
+
 ## Populando a tabela de tipos de transação
   Para utilizar os tipos de transação pré-definidos, use o comando `python manage.py loaddata types-fixture.json`
 
